@@ -18,18 +18,9 @@ export default function NavbarDemo({
   children: React.ReactNode;
 }) {
   const navItems = [
-    {
-      name: "About",
-      link: "#about",
-    },
-    {
-      name: "Projects",
-      link: "#projects",
-    },
-    {
-      name: "Timeline",
-      link: "#timeline",
-    },
+    { name: "About", link: "#about" },
+    { name: "Projects", link: "#projects" },
+    { name: "Journey", link: "#journey" },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -37,20 +28,25 @@ export default function NavbarDemo({
   return (
     <div className="relative w-full">
       <Navbar>
-        {/* Desktop Navigation */}
         <NavBody>
-          <NavbarLogo />
-          <NavItems items={navItems} />
-          <div className="flex items-center gap-4">
-            <NavbarButton variant="secondary">Contact Me</NavbarButton>
-            <NavbarButton variant="primary">Resume</NavbarButton>
+          <NavbarLogo href="#hero" />
+          <NavItems
+            items={navItems}
+            onItemClick={() => setIsMobileMenuOpen(false)}
+          />
+          <div className="flex items-center gap-3">
+            <NavbarButton href="#contact" variant="secondary" as="a">
+              Contact
+            </NavbarButton>
+            <NavbarButton href="/WaiLinnAung.pdf" variant="primary" as="a">
+              Resume
+            </NavbarButton>
           </div>
         </NavBody>
 
-        {/* Mobile Navigation */}
         <MobileNav>
           <MobileNavHeader>
-            <NavbarLogo />
+            <NavbarLogo href="#hero" />
             <MobileNavToggle
               isOpen={isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -71,17 +67,21 @@ export default function NavbarDemo({
                 <span className="block">{item.name}</span>
               </a>
             ))}
-            <div className="flex w-full flex-col gap-4">
+            <div className="flex w-full flex-col gap-3">
               <NavbarButton
+                href="#contact"
+                as="a"
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full"
               >
-                Contact Me
+                Contact
               </NavbarButton>
               <NavbarButton
+                href="/WaiLinnAung.pdf"
+                as="a"
                 onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
+                variant="secondary"
                 className="w-full"
               >
                 Resume

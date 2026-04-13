@@ -1,19 +1,25 @@
 import AboutSection from "@/components/about-section";
+import ContactSection from "@/components/contact-section";
 import HeroSection from "@/components/hero-section";
+import JourneySection from "@/components/journey-section";
 import PageLoader from "@/components/page-loader";
-import { LayoutGridDemo } from "@/components/projects";
+import { ProjectsSection } from "@/components/projects";
 import NavbarDemo from "@/components/resizable-navbar-demo";
-import TimelineDemo from "@/components/timeline-demo";
+import SiteFooter from "@/components/site-footer";
 import React from "react";
 
 function Home() {
   return (
     <NavbarDemo>
       <PageLoader>
-        <HeroSection />
-        <AboutSection />
-        <LayoutGridDemo />
-        <TimelineDemo />
+        <main>
+          <HeroSection />
+          <AboutSection />
+          <ProjectsSection />
+          <JourneySection />
+          <ContactSection />
+        </main>
+        <SiteFooter />
       </PageLoader>
     </NavbarDemo>
   );

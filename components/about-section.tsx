@@ -1,6 +1,7 @@
 "use client";
 
 import { techStack } from "@/components/tech-logos";
+import { fadeUp, stagger, staggerDelayed } from "@/lib/motion-variants";
 import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
 import { Sparkles, Target, Zap } from "lucide-react";
@@ -26,31 +27,6 @@ const highlights = [
     description: "AI where it helps; craft where it matters.",
   },
 ] as const;
-
-const stagger = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { staggerChildren: 0.09, delayChildren: 0.05 },
-  },
-};
-
-const staggerDelayed = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { staggerChildren: 0.08, delayChildren: 0.2 },
-  },
-};
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 28 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] as const },
-  },
-};
 
 export default function AboutSection() {
   const row = [...techStack, ...techStack];

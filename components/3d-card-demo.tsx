@@ -15,7 +15,7 @@ import {
 export default function ThreeDCardDemo() {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] h-[30rem] w-full max-w-[25rem] sm:w-[30rem] rounded-xl border">
+      <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/10 dark:bg-black dark:border-white/20 border-black/10 h-120 w-100 rounded-xl border">
         <CardItem
           translateZ="50"
           className="pointer-events-none absolute inset-0"
