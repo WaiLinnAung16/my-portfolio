@@ -36,7 +36,7 @@ export default function ContactSection() {
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
           variants={stagger}
-          className="mx-auto max-w-2xl text-center"
+          className="mx-auto max-w-2xl text-left  lg:text-center"
         >
           <motion.p
             variants={fadeUp}
@@ -86,7 +86,10 @@ export default function ContactSection() {
               variants={fadeUp}
               className="mt-6 flex items-start gap-2 text-sm text-neutral-600 dark:text-neutral-400"
             >
-              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-neutral-500" aria-hidden />
+              <MapPin
+                className="mt-0.5 h-4 w-4 shrink-0 text-neutral-500"
+                aria-hidden
+              />
               Remote-friendly · open to relocation for the right team
             </motion.p>
 

@@ -52,9 +52,7 @@ const milestones = [
     title: "2020",
     content: (
       <div className="space-y-4">
-        <EntryHeading>
-          🦠 2020 — The Beginning (COVID-19 Era)
-        </EntryHeading>
+        <EntryHeading>🦠 2020 — The Beginning (COVID-19 Era)</EntryHeading>
         <Body>
           Started my frontend development journey by learning HTML, CSS, and
           JavaScript through YouTube. This was my first step into the world of
@@ -74,8 +72,8 @@ const milestones = [
         <Body>
           Joined a web development class to gain structured knowledge. Learned
           core frontend technologies including React, Vue, Bootstrap, Tailwind
-          CSS, and explored design tools like Figma. Strengthened both coding and
-          UI/UX understanding.
+          CSS, and explored design tools like Figma. Strengthened both coding
+          and UI/UX understanding.
         </Body>
         <TagList
           tags={["React", "Vue", "Bootstrap", "Tailwind CSS", "Figma", "UI/UX"]}
@@ -87,15 +85,15 @@ const milestones = [
     title: "2022",
     content: (
       <div className="space-y-4">
-        <EntryHeading>
-          🤝 2022 — Real-World Experience (Volunteer)
-        </EntryHeading>
+        <EntryHeading>🤝 2022 — Real-World Experience (Volunteer)</EntryHeading>
         <Body>
           Volunteered for 3 months at Forward Society, collaborating on real
           projects, improving teamwork skills, and gaining practical development
           experience.
         </Body>
-        <TagList tags={["Forward Society", "Volunteer", "Teamwork", "Real projects"]} />
+        <TagList
+          tags={["Forward Society", "Volunteer", "Teamwork", "Real projects"]}
+        />
       </div>
     ),
   },
@@ -128,9 +126,7 @@ const milestones = [
     content: (
       <div className="space-y-4">
         <EntryHeading>📈 2024 — Skill Growth &amp; Expansion</EntryHeading>
-        <Body>
-          Focused on continuous learning and expanding my tech stack:
-        </Body>
+        <Body>Focused on continuous learning and expanding my tech stack:</Body>
         <BulletList
           items={[
             "Advanced frontend: Next.js, React Native, Framer Motion",
@@ -144,9 +140,7 @@ const milestones = [
     title: "2025",
     content: (
       <div className="space-y-4">
-        <EntryHeading>
-          🏫 2025 — Mid-Level Frontend Developer
-        </EntryHeading>
+        <EntryHeading>🏫 2025 — Mid-Level Frontend Developer</EntryHeading>
         <Body>
           Joined ConceptX International School as a Mid-Level Frontend
           Developer.
@@ -198,7 +192,7 @@ export default function JourneySection() {
       />
       <Timeline
         data={milestones}
-        heading="My journey"
+        heading="My Journey"
         subheading="From learning HTML on YouTube to mid-level frontend work and React Native deployment — how I grew year by year."
       />
     </div>

@@ -14,7 +14,10 @@ const footerLinks = [
 export default function SiteFooter() {
   return (
     <footer className="relative border-t border-neutral-200/80 bg-neutral-950 text-neutral-300 dark:border-neutral-800/80">
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-violet-500/25 to-transparent" aria-hidden />
+      <div
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-violet-500/25 to-transparent"
+        aria-hidden
+      />
 
       <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 py-14 md:flex-row md:items-start md:justify-between md:px-8 lg:px-10">
         <motion.div
@@ -58,11 +61,8 @@ export default function SiteFooter() {
 
       <div className="border-t border-white/5">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-6 text-xs text-neutral-500 md:flex-row md:items-center md:justify-between md:px-8 lg:px-10">
-          <p>© {new Date().getFullYear()} Wai Linn Aung. All rights reserved.</p>
-          <p className="inline-flex items-center gap-1.5">
-            Built with
-            <Heart className="h-3.5 w-3.5 text-violet-400" aria-hidden />
-            using Next.js &amp; Motion
+          <p>
+            © {new Date().getFullYear()} Wai Linn Aung. All rights reserved.
           </p>
         </div>
       </div>

@@ -30,12 +30,7 @@ import {
 } from "@floating-ui/dom";
 import { motion, useReducedMotion } from "motion/react";
 import Image from "next/image";
-import React, {
-  useEffect,
-  useLayoutEffect,
-  useRef,
-  useState,
-} from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 
 export type ProjectItem = {
@@ -270,7 +265,7 @@ function ProjectCard({
         </p>
       </div>
 
-      <div className="w-full h-[250px] absolute -bottom-12 lg:-bottom-3 -right-24 -rotate-4 lg:-rotate-8 rounded-lg overflow-hidden group-hover:scale-105 group-hover:rotate-0 transition-all duration-300">
+      <div className="w-full h-[250px] absolute -bottom-14 md:-bottom-12 lg:-bottom-5 xl:-bottom-5 -right-10 md:-right-6 xl:-right-8 -rotate-2 lg:-rotate-4 xl:-rotate-6 rounded-lg overflow-hidden group-hover:scale-105 group-hover:rotate-0 transition-all duration-300">
         <Image
           src={imageSrc}
           alt={imageAlt}
@@ -325,7 +320,7 @@ function ProjectCard({
 
 export function ProjectCards({ projects }: { projects: ProjectItem[] }) {
   return (
-    <ul className="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-7 lg:gap-8">
+    <ul className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 md:gap-7 lg:gap-8">
       {projects.map((project, i) => (
         <motion.li
           key={project.id}
