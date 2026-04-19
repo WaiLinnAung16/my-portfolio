@@ -8,11 +8,11 @@ export default function SpotlightPreview({
   children: React.ReactNode;
 }) {
   return (
-    <div className="relative w-full h-full overflow-hidden bg-black/[0.96] antialiased">
+    <div className="relative w-full h-full overflow-hidden bg-white dark:bg-black/96 antialiased">
       <div
         className={cn(
           "pointer-events-none absolute inset-0 [background-size:40px_40px] select-none",
-          "[background-image:linear-gradient(to_right,#17171730_1px,transparent_1px),linear-gradient(to_bottom,#17171730_1px,transparent_1px)]",
+          "[background-image:linear-gradient(to_right,#e4e4e740_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e740_1px,transparent_1px)] dark:[background-image:linear-gradient(to_right,#17171730_1px,transparent_1px),linear-gradient(to_bottom,#17171730_1px,transparent_1px)]",
         )}
       />
 

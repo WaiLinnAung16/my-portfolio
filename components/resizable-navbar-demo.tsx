@@ -10,6 +10,7 @@ import {
   MobileNavToggle,
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { useState } from "react";
 
 export default function NavbarDemo({
@@ -34,23 +35,27 @@ export default function NavbarDemo({
             items={navItems}
             onItemClick={() => setIsMobileMenuOpen(false)}
           />
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
             <NavbarButton href="#contact" variant="secondary" as="a">
               Contact
             </NavbarButton>
             <NavbarButton href="/WaiLinnAung.pdf" variant="primary" as="a">
               Resume
             </NavbarButton>
+            <ThemeToggle />
           </div>
         </NavBody>
 
         <MobileNav>
           <MobileNavHeader>
             <NavbarLogo href="#hero" />
-            <MobileNavToggle
-              isOpen={isMobileMenuOpen}
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            />
+            <div className="flex items-center gap-1">
+              <ThemeToggle />
+              <MobileNavToggle
+                isOpen={isMobileMenuOpen}
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              />
+            </div>
           </MobileNavHeader>
 
           <MobileNavMenu

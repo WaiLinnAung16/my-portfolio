@@ -244,7 +244,7 @@ function ProjectCard({
     <>
       <div className="relative z-10 px-8 pb-2 pt-9 md:px-5 md:pt-5">
         <div className="flex items-start gap-3 md:gap-4">
-          <h3 className="min-w-0 flex-1 text-pretty text-lg font-bold tracking-tight text-white md:text-[1.65rem] md:leading-snug">
+          <h3 className="min-w-0 flex-1 text-pretty text-lg font-bold tracking-tight dark:text-white text-neutral-900 md:text-[1.65rem] md:leading-snug">
             {title}
           </h3>
           {stacks?.length ? (
@@ -260,12 +260,12 @@ function ProjectCard({
             </ul>
           ) : null}
         </div>
-        <p className="mt-3 text-[15px] leading-relaxed text-neutral-400 md:text-sm">
+        <p className="mt-3 text-[15px] leading-relaxed dark:text-neutral-400 text-neutral-600 md:text-sm">
           {description}
         </p>
       </div>
 
-      <div className="w-full h-[250px] absolute -bottom-14 md:-bottom-12 lg:-bottom-5 xl:-bottom-5 -right-10 md:-right-6 xl:-right-8 -rotate-2 lg:-rotate-4 xl:-rotate-6 rounded-lg overflow-hidden group-hover:scale-105 group-hover:rotate-0 transition-all duration-300">
+      <div className="w-full h-[250px] absolute -bottom-14 md:-bottom-12 lg:-bottom-5 xl:-bottom-5 -right-10 md:-right-6 xl:-right-8 -rotate-2 lg:-rotate-4 xl:-rotate-6 rounded-lg overflow-hidden group-hover:scale-105 group-hover:rotate-0 transition-all duration-300 border">
         <Image
           src={imageSrc}
           alt={imageAlt}
@@ -278,7 +278,7 @@ function ProjectCard({
   );
 
   const shellClass = cn(
-    "group flex h-full min-h-[22rem] flex-col overflow-hidden rounded-xl border border-neutral-800 bg-[#0a0a0a] shadow-[0_1px_0_0_rgba(255,255,255,0.05)_inset]",
+    "group flex h-full min-h-[22rem] flex-col overflow-hidden rounded-xl border dark:border-neutral-800 border-neutral-200 bg-white dark:bg-[#0a0a0a] dark:shadow-[0_1px_0_0_rgba(255,255,255,0.05)_inset]",
     "md:min-h-[24rem]",
   );
 

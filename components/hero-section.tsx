@@ -24,20 +24,20 @@ export default function HeroSection() {
           >
             <motion.p
               variants={fadeUp}
-              className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-violet-200/90 backdrop-blur-sm"
+              className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-violet-100 dark:bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-violet-800 dark:text-violet-200/90 backdrop-blur-sm"
             >
-              <Sparkles className="h-3.5 w-3.5 text-violet-300" aria-hidden />
+              <Sparkles className="h-3.5 w-3.5 dark:text-violet-300 text-violet-800" aria-hidden />
               Open to opportunities
             </motion.p>
             <motion.h1
               variants={fadeUp}
-              className="mt-5 text-balance text-3xl font-bold tracking-tight text-neutral-50 md:text-4xl lg:text-5xl lg:leading-[1.08]"
+              className="mt-5 text-balance text-3xl font-bold tracking-tight text-black dark:text-neutral-50 md:text-4xl lg:text-5xl lg:leading-[1.08]"
             >
               Frontend developer. Problem solver. Builder.
             </motion.h1>
             <motion.p
               variants={fadeUp}
-              className="mt-4 max-w-xl text-pretty text-base leading-relaxed text-neutral-400 md:text-lg"
+              className="mt-4 max-w-xl text-pretty text-base leading-relaxed dark:text-neutral-400 text-neutral-600 md:text-lg"
             >
               I&apos;m Wai Linn Aung — crafting modern web and mobile
               experiences with React, Vue, and React Native. Focused on
@@ -58,7 +58,7 @@ export default function HeroSection() {
               </motion.a>
               <motion.a
                 href="#contact"
-                className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-medium text-neutral-100 backdrop-blur-sm transition-colors hover:border-violet-400/40 hover:bg-white/10"
+                className="inline-flex items-center rounded-full border border-white/15 bg-black dark:bg-white/5 px-5 py-2.5 text-sm font-medium text-neutral-100 backdrop-blur-sm transition-colors hover:border-violet-400/40 hover:dark:bg-white/10 hover:bg-black/70"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >

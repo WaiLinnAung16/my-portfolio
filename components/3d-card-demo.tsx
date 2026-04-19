@@ -21,7 +21,7 @@ export default function ThreeDCardDemo() {
           className="pointer-events-none absolute inset-0"
         >
           <div className="h-16 w-16 flex items-center justify-center bg-black border border-white/10 rounded-md absolute -top-5 -left-5 ">
-            <IconBrandNextjs className=" text-neutral-500 dark:text-neutral-300" />
+            <IconBrandNextjs className=" text-neutral-300" />
           </div>
         </CardItem>
         <CardItem

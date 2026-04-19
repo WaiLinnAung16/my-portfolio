@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Pixelify_Sans } from "next/font/google";
 import "./globals.css";
 import { SmoothScrollProvider } from "@/components/smooth-scroll-provider";
+import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -30,8 +31,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={cn(
-        "h-full dark",
+        "h-full",
         "antialiased",
         geistSans.variable,
         geistMono.variable,
@@ -40,7 +42,14 @@ export default function RootLayout({
       )}
     >
       <body className="min-h-full flex flex-col">
-        <SmoothScrollProvider>{children}</SmoothScrollProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <SmoothScrollProvider>{children}</SmoothScrollProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
