@@ -1,66 +1,48 @@
-# 🌐 My Portfolio
+# 🚀 Frontend Developer Portfolio
 
-A collection of my frontend projects showcasing my skills in building modern, responsive, and user-friendly web applications.
-
----
-
-## 🚀 Live Demo
-👉 https://your-portfolio-link.com
+Welcome to my portfolio — a curated collection of projects where I turn ideas into clean, responsive, and interactive web experiences.
 
 ---
 
-## 📸 Preview
-![Portfolio Screenshot](./preview.png)
+## 🌍 Live Portfolio
+
+🔗 https://wai-linn-aung.vercel.app/
 
 ---
 
-## 👨‍💻 About Me
+## 🧠 Who I Am
 
-I’m a Frontend Developer passionate about creating clean UI, smooth animations, and engaging user experiences. I enjoy working with modern technologies like React, Vue, and Tailwind CSS.
-
----
-
-## 🧩 Projects
-
-### 🎬 Moviezine
-A movie & TV show explorer using TMDB API with filtering, ratings, and trailers.  
-**Tech:** React, Tailwind CSS, Framer Motion  
-🔗 Live | 🔗 Code  
+Frontend Developer focused on building modern UIs with smooth interactions and thoughtful user experiences.
+I enjoy transforming complex ideas into simple, elegant interfaces.
 
 ---
 
-### 🍳 Everyone Can Cook
-A recipe browsing app with search and category filtering using a public API.  
-**Tech:** React, Tailwind CSS  
-🔗 Live | 🔗 Code  
+## ✨ What I Build
 
----
+I specialize in:
 
-### 🎓 EdOmnis
-A free LMS where users can create content, quizzes, and share learning resources.  
-**Tech:** Vue, Tailwind CSS, Headless UI  
-🔗 Live | 🔗 Code  
-
----
-
-### 🏫 ConceptX Website
-A modern landing site for an international school with clean UI and smooth animations.  
-**Tech:** Nuxt, Tailwind CSS, Framer Motion  
-🔗 Live | 🔗 Code  
-
----
-
-### 🎓 WisdomC
-A clean and modern college landing page focused on programs and user engagement.  
-**Tech:** Next.js, Tailwind CSS, Framer Motion  
-🔗 Live | 🔗 Code  
+* Responsive and mobile-first design
+* Smooth animations & micro-interactions
+* Clean and maintainable UI architecture
+* API-driven applications
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Frontend:** Next.js, Tailwind CSS  
-- **Styling:** Aceternity UI, Shadcn UI, Framer Motion  
-- **Tools:** Git, Figma
+**Frontend:**
+React · Vue · Next.js · Nuxt
+
+**Styling & UI:**
+Tailwind CSS · Framer Motion · Shadcn UI · Aceternity UI
+
+**Tools:**
+Git · Figma
 
 ---
+
+## 📬 Let’s Connect
+
+I’m always open to opportunities, collaborations, or just a quick chat.
+
+Feel free to reach out 🚀
