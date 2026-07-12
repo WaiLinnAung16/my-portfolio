@@ -7,6 +7,16 @@ import React from "react";
 
 const projects: ProjectItem[] = [
   {
+    id: "splitfun",
+    title: "SplitFun",
+    description:
+      "A no-login web app for splitting restaurant bills in real time — or play a decider mini-game to pick who pays it all.",
+    imageSrc: "/projects/splitfun.png",
+    imageAlt: "SplitFun app screenshot",
+    href: "https://split-fun.vercel.app/",
+    stacks: ["Next.js", "Tailwind CSS", "Supabase"],
+  },
+  {
     id: "moviezine",
     title: "Moviezine",
     description:
